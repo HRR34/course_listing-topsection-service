@@ -1,26 +1,25 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn test
+  /home/ubuntu/.nvm/versions/node/v10.15.0/bin/node /home/ubuntu/.nvm/versions/node/v10.15.0/bin/yarn install
 
 PATH: 
-  /Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/local/mysql/support-files:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/ismailalarmouti/Library/Android/sdk/tools:/Users/ismailalarmouti/Library/Android/sdk/tools/bin:/Users/ismailalarmouti/Library/Android/sdk/platform-tools
+  /home/ubuntu/.nvm/versions/node/v10.15.0/bin:/usr/local/rvm/gems/ruby-2.4.0/bin:/usr/local/rvm/gems/ruby-2.4.0@global/bin:/usr/local/rvm/rubies/ruby-2.4.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin
 
 Yarn version: 
-  1.10.1
+  1.12.3
 
 Node version: 
-  8.11.2
+  10.15.0
 
 Platform: 
-  darwin x64
+  linux x64
 
 Trace: 
-  SyntaxError: /Users/ismailalarmouti/hrr34/hrr34-fec/topsection-service-ismail/client/package.json: Unexpected token } in JSON at position 172
+  SyntaxError: /home/ubuntu/workspace/client/package.json: Unexpected token } in JSON at position 369
       at JSON.parse (<anonymous>)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:1136:59
+      at /home/ubuntu/.nvm/versions/node/v10.15.0/lib/node_modules/yarn/lib/cli.js:1631:59
       at Generator.next (<anonymous>)
-      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
-      at <anonymous>
+      at step (/home/ubuntu/.nvm/versions/node/v10.15.0/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /home/ubuntu/.nvm/versions/node/v10.15.0/lib/node_modules/yarn/lib/cli.js:315:13
 
 npm manifest: 
   {
@@ -29,15 +28,15 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "test": "jest --watch ./tests",
+      "test": "jest --watch --verbose ./tests",
       "dev": "webpack -d --watch",
+      "build": "webpack --mode=production"
     },
     "dependencies": {
       "react": "^16.6.0",
       "react-dom": "^16.6.0",
       "semantic-ui-css": "^2.4.1",
       "semantic-ui-react": "^0.83.0",
-      "webpack": "^4.23.1"
     },
     "devDependencies": {
       "@babel/core": "^7.0.0",
