@@ -1,6 +1,6 @@
 const gulp = require('gulp'),
   gzip = require('gulp-gzip'),
-  s3 = require('gulp-s3')
+  s3 = require('gulp-s3'),
   { awsConfig } = require('./config.js');
   
   gulp.task('gulp_s3', () => {
